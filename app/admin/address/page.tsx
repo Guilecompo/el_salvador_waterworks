@@ -2,10 +2,10 @@
 import Image from 'next/image'
 import { Sidebar } from "../sidebar"
 
-export default function Employees() {
+export default function Address() {
   return (
     <div className="flex h-screen">
-      <Sidebar currentPath="/admin/employees/" />
+      <Sidebar currentPath="/admin/address/" />
       <main className="flex-1 px-4 md:px-4 pt-16 md:pt-2 bg-[#f3f4f6] relative overflow-hidden">
         {/* Centered background image */}
         <div className="absolute inset-0 flex flex-col md:flex-row justify-evenly items-center space-y-2 md:space-y-0 space-x-2">
@@ -27,7 +27,7 @@ export default function Employees() {
 
         {/* Content overlay */}
         <div className="relative z-10 overflow-y-auto h-full">
-          <h1 className="text-xl font-bold mb-4">Employees</h1>
+          <h1 className="text-xl font-bold mb-4">Address</h1>
         </div>
       </main>
     </div>
