@@ -1,4 +1,8 @@
 'use client'
+import {
+  Card,
+  CardContent
+} from "@/components/ui/card"
 import Image from 'next/image'
 import { Sidebar } from "../sidebar"
 
@@ -28,6 +32,22 @@ export default function Branch() {
         {/* Content overlay */}
         <div className="relative z-10 overflow-y-auto h-full">
           <h1 className="text-xl font-bold mb-4">Branch</h1>
+          <div className="flex flex-col md:flex-row md:flex-wrap">
+              <div className="flex-none w-full md:w-2/3 py-1">
+                  <Card className="bg-[#16a34a] h-72 md:h-96 text-white">
+                      <CardContent className="p-4">
+                          <p>Branch List Table</p>
+                      </CardContent>
+                  </Card>
+              </div>
+              <div className="flex-none w-full md:w-1/3 py-1">
+                  <Card className="bg-[#16a34a] h-72 md:h-96 text-white">
+                      <CardContent className="p-4">
+                          <p>Add Branch Form</p>
+                      </CardContent>
+                  </Card>
+              </div>
+          </div>
         </div>
       </main>
     </div>

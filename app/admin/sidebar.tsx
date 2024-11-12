@@ -30,7 +30,7 @@ export function Sidebar({ currentPath }: { currentPath: string }) {
       <div className="mb-6">
         <h1 className="text-2xl font-bold">Waterworks</h1>
       </div>
-      <nav className="space-y-5 flex-grow mt-3">
+      <nav className="space-y-2 flex-grow mt-3">
         {sidebarItems.map((item) => (
           <Link
             key={item.name}

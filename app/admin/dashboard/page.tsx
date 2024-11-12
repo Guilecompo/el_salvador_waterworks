@@ -34,20 +34,52 @@ export default function Dashboard() {
             <h1 className="text-xl font-bold mb-4">Dashboard</h1>
             <Card className="bg-[#16a34a] w-48 h-12 text-white">
                 <CardContent className="p-2">
-                    <p>Dropdown</p>
+                    <p>Select Branch</p>
                 </CardContent>
             </Card>
             <div className="flex flex-col md:flex-row md:flex-wrap">
-                {/* Card Wrapper */}
-                {[...Array(5)].map((_, index) => (
-                    <div key={index} className="flex-none w-full md:w-1/3 py-1">
+                <div className="flex-none w-full md:w-1/3 py-1">
                     <Card className="bg-[#16a34a] h-24 text-white">
                         <CardContent className="p-4">
-                        <p>Card Content {index + 1}</p>
+                        <p>Total Employees </p>
                         </CardContent>
                     </Card>
-                    </div>
-                ))}
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-24 text-white">
+                        <CardContent className="p-4">
+                        <p>Total Consumers</p>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-24 text-white">
+                        <CardContent className="p-4">
+                        <p>Total Water Consumed</p>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-24 text-white">
+                        <CardContent className="p-4">
+                        <p>Total Payments</p>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-24 text-white">
+                        <CardContent className="p-4">
+                        <p>Total Balance</p>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-24 text-white">
+                        <CardContent className="p-4">
+                        <p>Total zones</p>
+                        </CardContent>
+                    </Card>
+                </div>
             </div>
             <div className="flex flex-col md:flex-row md:flex-wrap">
                 <div className="flex-none w-full md:w-1/2 py-1">
