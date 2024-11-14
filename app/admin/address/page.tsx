@@ -1,4 +1,14 @@
 'use client'
+import {
+  Card,
+  CardContent
+} from "@/components/ui/card"
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from "@/components/ui/tabs"
 import Image from 'next/image'
 import { Sidebar } from "../sidebar"
 
@@ -28,6 +38,48 @@ export default function Address() {
         {/* Content overlay */}
         <div className="relative z-10 overflow-y-auto h-full">
           <h1 className="text-xl font-bold mb-4">Address</h1>
+          <Tabs defaultValue="barangay" className="w-[400px] md:w-full ">
+            <TabsList className="grid w-full grid-cols-2">
+              <TabsTrigger value="barangay" className="bg-background">Barangay</TabsTrigger>
+              <TabsTrigger value="zone" className="bg-background">Zone</TabsTrigger>
+            </TabsList>
+            <TabsContent value="barangay">
+              <div className="flex flex-col md:flex-row md:flex-wrap">
+                <div className="flex-none w-full md:w-2/3 py-1">
+                    <Card className="bg-[#16a34a] h-72 md:h-96 text-white">
+                        <CardContent className="p-4">
+                            <p>Barangay List Table</p>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-72 md:h-96 text-white">
+                        <CardContent className="p-4">
+                            <p>Add Barangay Form</p>
+                        </CardContent>
+                    </Card>
+                </div>
+              </div>
+            </TabsContent>
+            <TabsContent value="zone">
+              <div className="flex flex-col md:flex-row md:flex-wrap">
+                <div className="flex-none w-full md:w-2/3 py-1">
+                    <Card className="bg-[#16a34a] h-72 md:h-96 text-white">
+                        <CardContent className="p-4">
+                            <p>Zone List Table</p>
+                        </CardContent>
+                    </Card>
+                </div>
+                <div className="flex-none w-full md:w-1/3 py-1">
+                    <Card className="bg-[#16a34a] h-72 md:h-96 text-white">
+                        <CardContent className="p-4">
+                            <p>Add Zone Form</p>
+                        </CardContent>
+                    </Card>
+                </div>
+              </div>
+            </TabsContent>
+          </Tabs>
         </div>
       </main>
     </div>
