@@ -38,7 +38,7 @@ export default function Address() {
         {/* Content overlay */}
         <div className="relative z-10 overflow-y-auto h-full">
           <h1 className="text-xl font-bold mb-4">Address</h1>
-          <Tabs defaultValue="barangay" className="w-[400px] md:w-full ">
+          <Tabs defaultValue="barangay" className="w-full ">
             <TabsList className="grid w-full grid-cols-2">
               <TabsTrigger value="barangay" className="bg-background">Barangay</TabsTrigger>
               <TabsTrigger value="zone" className="bg-background">Zone</TabsTrigger>
